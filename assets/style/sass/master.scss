@@ -1,0 +1,27 @@
+@import "fonts";
+@import "variables";
+@import "ds-menu";
+
+body {
+	font-size: $font-size;
+	font-weight: 400;
+	font-family: $font;
+	background-color: #fafafa;
+	color: #333;
+	padding: 0px;
+	margin: 0px;
+}
+
+ul {
+	padding: 0px;
+	margin: 0px;
+
+	li {
+		list-style-type: none;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}

@@ -1,0 +1,55 @@
+.ds-menu-component {
+	.menu-content {
+
+		.menu-icon {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			padding: 15px;
+			z-index: 2;
+		}
+
+		.menu-list {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 0px;
+			height: 0px;
+			overflow: hidden;
+			background-color: rgba(0, 0, 0, 0.8);
+			z-index: 1;
+			transition: all ease-in-out .3s;
+
+			ul {
+				opacity: 0;
+				padding-left: 25%;
+				padding-top: 20%;
+				transition: all ease-in-out .3s;
+
+				li {
+					a {
+						font-size: $menu-font-size;
+						line-height: 2rem;
+						color: #fafafa;
+					}
+				}
+			}
+		}
+
+		&:hover {
+			.menu-icon {
+				color: #fafafa;
+			}
+
+			.menu-list {
+				width: 400px;
+				height: 400px;
+				border-bottom-right-radius: 100%;
+
+				ul {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
